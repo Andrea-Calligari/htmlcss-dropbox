@@ -1,87 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropBox</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/5ed8349ea2.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="debug">
-    <section class="section" >
-        <header class="page__header">
-            <nav class="container-lg">
-                <div class="row">
-                    <div>
-                        <ul>
-                            <li>
-                                <img class="logo" src="./img/logo-small.png" alt="">
-                            </li>
-                            <li>Perchè DropBox</li>
-                            <li>Funzioni</li>
-                            <li>Piani e Servizi</li>
-                        </ul>
-                     </div> 
-                     <div>
-                        <ul>
-                            <li> 
-                                <a href="#">Supporto</a>
-                            </li>
-                            <li> 
-                                <a href="#">Contatta l'ufficio venidte</a>
-                            </li>
-                            <li>
-                                 <a href="#">Accedi</a>
-                                </li>
-                            <li>
-                                <a href="#">
-                                    <button class="btn bg-blue">Inizia</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-            </nav>
-        </header>
-    </section>
-    <main class="page__main">
+    <header class="page__header">
+        <nav class="container-lg">
+            <div class="flex space-btwn">
+                <ul>
+                    <li><a href="#">
+                            <img class="logo" src="./img/logo-small.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            Perchè DropBox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Funzioni</a>
+                    </li>
+                    <li>
+                        <a href="#">Piani e Servizi</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Supporto</a>
+                    </li>
+                    <li>
+                        <a href="#">Contatta l'ufficio venidte</a>
+                    </li>
+                    <li>
+                        <a href="#">Accedi</a>
+                    </li>
+                    <li>
+                        <a class="btn bg-blue" href="#">Inizia</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
         <section class="section bg-B4">
             <div class="container">
                 <div class="row">
-                    <h1 style="font-size: 50px;">Tutto cio che ti serve per il lavoro, in un unico posto.</h1>
+                    <h1 style="font-size: 75px;">Tutto cio che ti serve per il lavoro, in un unico posto.</h1>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-40">
                         <p>
-                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
-                            DropBox Buisness è più di uno spazio di ar hiviazione sicuro: è un modo intelligente e integrato
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
+                            posto.
+                            DropBox Buisness è più di uno spazio di ar hiviazione sicuro: è un modo intelligente e
+                            integrato
                             per ottimizzare il flusso di lavoro esistente.
                         </p>
                         <a href="#">
                             <button class="btn bg-blue">inizia la tua prova gratuita</button>
                         </a>
                         <p>Annulla in qualsiasi momento</p>
-                        <div class="mt-0">&Downarrow;</div>
+                        <div class="mt-0"><i class="fa-solid fa-down-long"></i></div>
                     </div>
                     <div class="col-60">
-                        <img src="./img/business-feature-coordinate-it.png" alt="">
+                        <img src="./img/jumbo.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-            <section class="section">
-                <div class="container-sm">
-                    <h1>Trova il piano buisness che fa per te!</h1>
+        <section class="section__buisness">
+            <div class="container-sm">
+                <div class="Sub">
+                    <h1 style="font-size: 30px;">Trova il piano buisness che fa per te!</h1>
+                    <label>
+                        <input type="radio" name="sub" value="month" checked><span> Fatturazione Mensile</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="sub" value="year"><span> Fatturazione annuale</span>
+                    </label>
+                </div>
+            </div>
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-sub">
+                            <section class="card__header">
+                                <i class="fa-solid fa-user icon"></i><span>singolo</span>
+                            </section>
+                            <section class="card__body">
+                            <header class="header__body">
+                                <h3>Professional</h3>
+                                <div style="font-weight: bold;">&euro; 12.00</div>
+                                <div>/mese</div>
+                                <ul>
+                                    <li><i class="fa-solid fa-user icon"></i> 1 Utente</li>
+                                    <li><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li><i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e
+                                            condivisione file semplice e sicura </li>
+                                </ul>
+                            </header>
+
+                                <body class="body__body">
+                                    <ul>
+                                        <li>
+                                            <a class="btn bg-blue" href="#">Prova gratis per 30 giorni</a>
+                                        </li>
+                                        <li> oppure <a class="link" href="#">acquista ora</a></li>
+                                    </ul>
+                                    <hr>
+                                </body>
+                                <footer class="footer__body">
+                                    <h4>Punti Salienti del piano</h4>
+                                    <div><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con DropBox Transfert</div>
+                                    <div><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</div>
+
+                                </footer>
+
+
+
+
+                            </section>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-4">col 4
+                        col4
+                        col4
+                    </div>
+                    <div class="col-4">col4</div>
+                    <div class="col">col 100%</div>
                 </div>
 
+            </div>
 
 
 
 
 
 
-            </section>
+
+        </section>
 
 
 
@@ -99,6 +169,7 @@
         </section>
     </main>
     <footer>footer</footer>
-    
+
 </body>
+
 </html>
