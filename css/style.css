@@ -49,9 +49,7 @@ body{
 .col-4{
     width: calc(4 * 100% / 12);
 }
-.col-5{
-    width: calc(5 * 100% / 12);
-}
+
 .col-40{
     width: 40%;
 }
@@ -99,7 +97,8 @@ body{
     color: black;
     border: transparent;
 }
-.container .row >.col-40{
+.section__hero .container .row >.col-40{
+    display: flex;
     flex-direction: column;
     gap: 30px;
 }
@@ -138,60 +137,82 @@ hr{
 .page__header .row{
     padding: 12px;
 }
+.page__header .container-lg{
+    padding:12px 0;
 
+}
 
-/* CARD__SUB */
-.Sub{
+/* SECTION__HERO */
+
+.section__hero p{
+    font-size: 20px;
+}
+.section__hero h1{
+    font-size: 64px;
+}
+/* SECTION-BUISNESS */
+.section__buisness{
+    padding-top: 32px;
+}
+
+.section__buisness .Sub{
     padding-left: 32px;
 }
-.Sub > h1{
-    font-size: 32px;
+.section__buisness .Sub > h1{
+    font-size: 36px;
     
 } 
-.Sub > *{
+.section__buisness .Sub > *{
     padding: 20px;
 }
-.card-sub{
+.section__buisness .card-sub{
     padding: 20px;
     width: 100%;
 }
-.card__header{
+.section__buisness .card__header{
     text-align: center;
 }
-.card__header, .card__body{
+.section__buisness .card__header, .card__body{
     border: 1px solid grey;
     
 }
-.card__body  .header__body > *:not(.col){ 
+.section__buisness .card__body  .header__body > *:not(.col){ 
     padding: 12px 16px;
     
 }
-.card__body .body__body ul{
+.section__buisness .card__body .body__body ul{
     padding-bottom: 20px;
     
 }
-.footer__body, .body__body{
+.section__buisness .footer__body, .body__body{
     padding: 10px;
 }
-.footer__body, li{
+.section__buisness .footer__body, li{
     padding-top: 10px;
 }
-.header__body, .body__body{
+.section__buisness .header__body, .body__body{
     padding-bottom: 20px;
 } 
 
+
 /* PARTNER */
+.partner{
+    padding-top: 32px;
+}
 .partner .row >*{
     padding: 20px;
 }
-.col-40 > h1{
+.partner .col-40 > h1{
     font-size: 32px;
 }
-.col-40 > *:not(.btn-trasparent){
+.partner .col-40 > *:not(.btn-trasparent){
     padding:  12px ;
 }
 
 /*  DROPBOX-BUISNESS */
+.dropbox-buisness{
+    padding-top: 64px;
+}
 .dropbox-buisness .row > *{
     flex-direction: row;
 }
@@ -211,11 +232,12 @@ hr{
 
 /*  USERS */
 .users{
+    
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .users .container-sm{
-    padding: 24px;
+    padding-left: 32px;
 }
 .users .col-50 > h1{
     font-size: 32px;
@@ -232,25 +254,25 @@ hr{
 .designit .col-40 .btn-white{
     padding: 12px 0;
 }
-.logo-designit{
+.designit .logo-designit{
     width: 200px;
 }
-/* SECTION-BG-B4 */
-.section{
+/* SECTION-BUILDING */
+.section__building{
     padding: 20px; 
 }
-.section .row .col-40{
+.section__building .row .col-40{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.section .col-60 > h1{
+.section__building .col-60 > h1{
     font-size: 32px;
 }
-.section .col-40{
+.section__building .col-40{
     margin-left: 12px 0;
 }
-.section h1{
+.section__building h1{
     font-size: 70px;
     
 }
@@ -267,7 +289,7 @@ hr{
 .ask__question .container-sm {
     padding: 18px ; 
 }
-.container-sm > h1{
+.ask__question .container-sm > h1{
     padding-bottom: 24px;
     font-size: 32px;
 }
@@ -293,7 +315,7 @@ hr{
 .space-btwn{
     justify-content: space-between;
 }
-.mt-0{
+.mt-auto{
     margin-top: auto;
 }
 .pd-50{
@@ -348,6 +370,6 @@ padding: 50px;
 .debug .card__body header, body, footer{
      /* border: 2px solid purple;  */
 }
-.debug .designit .col-100{
-    /* border: 1px solid orangered; */
+.debug .designit .col-100 {
+     border: 1px solid orangered; 
 }
