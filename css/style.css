@@ -22,18 +22,19 @@ img{
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.container{
+.container, .container-language{
     max-width: 1200px;
 }
 .container-sm{
     max-width: 1000px;
     
 }
-.container-sm, .container, .container-lg{
+.container-sm, .container, .container-lg, .container-language{
     margin: 0 auto;
     width: 100%;
     
 }
+
 .col{
     width: 100%;
     padding: 20px;
@@ -270,6 +271,22 @@ hr{
     padding-bottom: 24px;
     font-size: 32px;
 }
+/* PAGE__FOOTER */
+.page__footer {
+    background-color: black;
+    color:white;
+    /* padding: 50px; */
+}
+.page__footer ul{
+    margin: 64px;
+}
+.page__footer .first{
+    padding-bottom: 16px;
+}
+.page__footer .container-language{
+     padding: 60px; 
+}
+
 
 
 /* UTILITY */
@@ -300,10 +317,10 @@ padding: 50px;
 
 /* DEBUG */
 .debug  .row{
-     border: 2px solid red;  
+     /* border: 2px solid red;   */
 }
 .debug   .col-4{
-      border: 1px solid blue;   
+      /* border: 1px solid blue;    */
     /* padding: 20px; */
 }
 .debug .col-30 > *{
@@ -332,5 +349,5 @@ padding: 50px;
      /* border: 2px solid purple;  */
 }
 .debug .designit .col-100{
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
 }
