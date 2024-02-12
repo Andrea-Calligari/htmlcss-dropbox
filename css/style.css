@@ -49,7 +49,16 @@ body{
 .col-4{
     width: calc(4 * 100% / 12);
 }
+.col-70{
+    width: 70%;
+    margin-top: 12px;
 
+}
+.col-30{
+    width: 30%;
+    margin-top: 12px;
+    
+}
 .col-40{
     width: 40%;
 }
@@ -58,6 +67,9 @@ body{
 }
 .col-60{
     width: 60%;
+}
+.col-17{
+    width: 17%;
 }
 .flex{
     display: flex;
@@ -84,8 +96,12 @@ body{
     padding: 0 10px;
 }
 .btn-secondary{
-    padding: 10px 20px;
+    padding: 10px 32px;
     
+}
+.btn-thrd{
+    padding: 10px 10px;
+
 }
 .btn-trasparent{
     border: 2px solid grey;
@@ -151,37 +167,45 @@ hr{
     font-size: 64px;
 }
 /* SECTION-BUISNESS */
-.section__buisness{
+ .section__buisness{
     padding-top: 32px;
+} 
+.section__buisness .container-sm + .container-sm{
+    margin-top: 36px;
 }
-
+.card-sub {
+    border: 1px solid grey;
+}
+.card__header{
+    text-align: center;
+    line-height: 36px;
+    border-bottom: 1px solid grey;
+}
+.section__buisness .row >*{
+    padding: 0 25px;
+}
+.section__buisness .row{
+    row-gap: 50px;
+}
 .section__buisness .Sub{
     padding-left: 32px;
 }
-.section__buisness .Sub > h1{
-    font-size: 36px;
-    
-} 
-.section__buisness .Sub > *{
-    padding: 20px;
+.col-4 .card-sub{
+    height: 100%;
+
 }
-.section__buisness .card-sub{
-    padding: 20px;
-    width: 100%;
-}
-.section__buisness .card__header{
-    text-align: center;
-}
-.section__buisness .card__header, .card__body{
-    border: 1px solid grey;
-    
-}
-.section__buisness .card__body  .header__body > *:not(.col){ 
-    padding: 12px 16px;
-    
+.section__buisness .col .body__body p{
+    max-width: 500px;
 }
 .section__buisness .card__body .body__body ul{
     padding-bottom: 20px;
+    
+}
+.section__buisness .card__body h4{
+    padding-left: 10px;
+}
+.section__buisness .card__body  .header__body > *:not(.col){ 
+    padding: 12px 12px;
     
 }
 .section__buisness .footer__body, .body__body{
@@ -192,8 +216,17 @@ hr{
 }
 .section__buisness .header__body, .body__body{
     padding-bottom: 20px;
-} 
-
+}
+.section__buisness li{
+    display: flex;
+    gap: 12px;
+}
+.section__buisness .col-4 .btn-secondary{
+    width: 100%;
+}
+.section__buisness .col .header__body{
+    display: flex;
+}
 
 /* PARTNER */
 .partner{
@@ -251,12 +284,16 @@ hr{
     padding: 20px; 
     
 }
+.middle-square{
+    background-color: #dedede;
+}
 .designit .col-40 .btn-white{
     padding: 12px 0;
 }
 .designit .logo-designit{
     width: 200px;
 }
+
 /* SECTION-BUILDING */
 .section__building{
     padding: 20px; 
@@ -266,11 +303,9 @@ hr{
     flex-direction: column;
     align-items: flex-start;
 }
-.section__building .col-60 > h1{
+.section__building .col-70 > h2{
     font-size: 32px;
-}
-.section__building .col-40{
-    margin-left: 12px 0;
+    max-width: 60%;
 }
 .section__building h1{
     font-size: 70px;
@@ -297,17 +332,8 @@ hr{
 .page__footer {
     background-color: black;
     color:white;
-    /* padding: 50px; */
 }
-.page__footer ul{
-    margin: 64px;
-}
-.page__footer .first{
-    padding-bottom: 16px;
-}
-.page__footer .container-language{
-     padding: 60px; 
-}
+
 
 
 
@@ -372,4 +398,7 @@ padding: 50px;
 }
 .debug .designit .col-100 {
      border: 1px solid orangered; 
+}
+.debug .page__footer .col-17{
+    border: 1px solid violet;
 }
